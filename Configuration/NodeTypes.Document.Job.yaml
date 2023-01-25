@@ -1,6 +1,6 @@
 # This is a custom document node type which has been auto-generated for your site package
 # by Neos. You can customize this to your needs.
-'ISP.DSD:Document.Job':
+'ISP.Jobs:Document.Job':
   superTypes:
     'Neos.Neos:Document': true
   ui:

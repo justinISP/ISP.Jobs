@@ -8,7 +8,7 @@
     "suggest": {
         "neos/seo": "*"
     },
-    "name": "isp/dsd",
+    "name": "isp/jobs",
     "autoload": {
         "psr-4": {
             "ISP\\Jobs\\": "Classes/"

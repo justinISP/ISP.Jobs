@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{namespace neos=Neos\Neos\ViewHelpers}
+{namespace fusion=Neos\Fusion\ViewHelpers}
+{namespace media=Neos\Media\ViewHelpers}
+<html>
+<head>
+	<f:section name="stylesheets">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="format-detection" content="telephone=yes">
+	</f:section>
+	<f:section name="headScripts">
+	</f:section>
+</head>
+<body>
+<f:section name="body">
+
+		<figure class="lightboxpicture">
+		  <f:if condition="{previewPicture}">
+		    <a href="{neos.media:uri.image(image: previewPicture, maximumWidth: 1600)}" rel ="example_group"  class="lightbox" data-fancybox="lightbox" data-fancybox-group="lightboxgroup">
+			<media:image class="img-fluid" image="{previewPicture}" maximumWidth="800" allowUpScaling="TRUE" alt="{title} | {previewPicture.caption}" />
+		    </a>
+		  </f:if>
+		</figure>
+		<div class="imagewithauthor-text">
+		  <p>{previewPicture.caption} <f:if condition="{previewPicture.copyrightnotice}">(Foto: {previewPicture.copyrightnotice})</f:if></p>
+		</div>
+
+		<h1><neos:contentElement.wrap><neos:contentElement.editable property="title" /></neos:contentElement.wrap></h1>
+
+		<neos:contentElement.wrap>
+		  <neos:contentElement.editable property="teaser" />
+		</neos:contentElement.wrap>
+
+		<neos:contentElement.wrap>
+		  <neos:contentElement.editable property="tasks" />
+		</neos:contentElement.wrap>
+
+		<neos:contentElement.wrap>
+		  <neos:contentElement.editable property="requirements" />
+		</neos:contentElement.wrap>
+
+		<neos:contentElement.wrap>
+		  <neos:contentElement.editable property="apply" />
+		</neos:contentElement.wrap>
+</f:section>

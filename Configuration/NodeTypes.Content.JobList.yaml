@@ -1,0 +1,7 @@
+'ISP.DSD:JobList':
+  superTypes:
+    'Neos.Neos:Content': TRUE
+  ui:
+    label: 'Stellenanzeigen (Liste)'
+    icon: icon-list
+    inlineEditable: true

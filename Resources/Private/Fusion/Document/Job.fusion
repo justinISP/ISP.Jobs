@@ -1,0 +1,21 @@
+prototype(ISP.Jobs:Document.Job) < prototype(Neos.Neos:Page){
+
+  body {
+    templatePath = 'resource://ISP.Jobs/Private/Templates/Page/Job.html'
+    sectionName = 'body'
+    previewPicture = ${q(node).property('previewPicture')}
+    title = ${q(node).property('title')}
+    teaser = ${q(node).property('teaser')}
+    tasks = ${q(node).property('tasks')}
+    requirements = ${q(node).property('requirements')}
+    apply = ${q(node).property('apply')}
+
+    content {
+
+      main = Neos.Neos:ContentCollection {
+        nodePath = 'main'
+      }
+    }
+  }
+
+}

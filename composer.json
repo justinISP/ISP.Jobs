@@ -1,0 +1,22 @@
+{
+    "description": "",
+    "type": "neos-site",
+    "require": {
+        "neos/neos": "*"
+        "flowpack/listable": "*"
+    },
+    "suggest": {
+        "neos/seo": "*"
+    },
+    "name": "isp/dsd",
+    "autoload": {
+        "psr-4": {
+            "ISP\\Jobs\\": "Classes/"
+        }
+    },
+    "extra": {
+        "neos": {
+            "package-key": "ISP.Jobs"
+        }
+    }
+}

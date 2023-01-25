@@ -1,0 +1,161 @@
+# This is a custom document node type which has been auto-generated for your site package
+# by Neos. You can customize this to your needs.
+'ISP.DSD:Document.Job':
+  superTypes:
+    'Neos.Neos:Document': true
+  ui:
+    icon: 'icon-file'
+    label: 'Stellenanzeige'
+    inspector:
+      groups:
+        general:
+          label: General
+          icon: 'icon-exchange'
+          position: 1100
+  childNodes:
+    main:
+      type: 'Neos.Neos:ContentCollection'
+  properties:
+    previewPicture:
+      type: Neos\Media\Domain\Model\ImageInterface
+      ui:
+        label: Vorschaubild
+        reloadIfChanged: TRUE
+        inspector:
+          group: 'general'
+          editorOptions:
+            features:
+              resize: TRUE
+    title:
+      type: string
+      ui:
+        inlineEditable: true
+        inspector:
+          group: null
+        aloha:
+          placeholder: 'Enter title here'
+          format:
+            b: false
+            i: false
+            u: false
+            sub: false
+            sup: false
+            p: false
+            h1: true
+            h2: false
+            h3: false
+            pre: false
+            removeFormat: false
+          table: { }
+          list: { }
+          link:
+            a: true
+          alignment: { }
+    teaser:
+      type: string
+      #defaultValue: 'Hier Teaser eingeben...'
+      ui:
+        label: 'Teaser text'
+        inlineEditable: true
+        inspector:
+          group: null
+        aloha:
+          placeholder: 'Hier Teaser eingeben...'
+          format:
+            b: true
+            i: true
+            u: false
+            sub: false
+            sup: false
+            p: true
+            h1: false
+            h2: false
+            h3: false
+            pre: false
+            removeFormat: false
+          table: {  }
+          list: {  }
+          link:
+            a: true
+          alignment: { }
+    tasks:
+      type: string
+      #defaultValue: 'Hier die Aufgaben eintragen...'
+      ui:
+        label: 'Teaser text'
+        inlineEditable: true
+        inspector:
+          group: null
+        aloha:
+          placeholder: 'Hier die Aufgaben eintragen...'
+          format:
+            b: true
+            i: true
+            u: false
+            sub: false
+            sup: false
+            p: true
+            h1: false
+            h2: false
+            h3: false
+            pre: false
+            removeFormat: false
+          table: true
+          list: true
+          link:
+            a: true
+          alignment: { }
+    requirements:
+      type: string
+      #defaultValue: 'Hier die Voraussetzungen eintragen...'
+      ui:
+        label: 'Teaser text'
+        inlineEditable: true
+        inspector:
+          group: null
+        aloha:
+          placeholder: 'Hier die Voraussetzungen eintragen...'
+          format:
+            b: true
+            i: true
+            u: false
+            sub: false
+            sup: false
+            p: true
+            h1: false
+            h2: false
+            h3: false
+            pre: false
+            removeFormat: false
+          table: true
+          list: true
+          link:
+            a: true
+          alignment: { }
+    apply:
+      type: string
+      #defaultValue: 'Hier die Möglichkeiten zur Bewerbung eintragen...'
+      ui:
+        label: 'Teaser text'
+        inlineEditable: true
+        inspector:
+          group: null
+        aloha:
+          placeholder: 'Hier die Möglichkeiten zur Bewerbung eintragen...'
+          format:
+            b: true
+            i: true
+            u: false
+            sub: false
+            sup: false
+            p: true
+            h1: false
+            h2: false
+            h3: false
+            pre: false
+            removeFormat: false
+          table: true
+          list: true
+          link:
+            a: true
+          alignment: { }

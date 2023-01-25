@@ -1,0 +1,9 @@
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        'ISP.Jobs': TRUE
+  Flow:
+    mvc:
+      routes:
+        'ISP.Jobs': TRUE

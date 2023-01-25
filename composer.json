@@ -1,6 +1,16 @@
 {
-    "description": "",
-    "type": "neos-site",
+    "description": "A simple Neos CMS shopping cart plugin (without user management)",
+    "license": "GPL-3.0+",
+    "type": "neos-plugin",
+    "name": "isp/jobs",
+    "authors": [
+        {
+            "name": "Justin Scharf",
+            "email": "jsc@isp-media.de",
+            "homepage": "http://www.isp-media.de",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "neos/neos": "*"
         "flowpack/listable": "*"
@@ -8,7 +18,6 @@
     "suggest": {
         "neos/seo": "*"
     },
-    "name": "isp/jobs",
     "autoload": {
         "psr-4": {
             "ISP\\Jobs\\": "Classes/"

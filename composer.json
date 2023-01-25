@@ -1,5 +1,5 @@
 {
-    "description": "A simple Neos CMS shopping cart plugin (without user management)",
+    "description": "A simple package to add job ads and list them.",
     "license": "GPL-3.0+",
     "type": "neos-plugin",
     "name": "isp/jobs",

@@ -1,4 +1,4 @@
-'ISP.DSD:JobList':
+'ISP.Jobs:JobList':
   superTypes:
     'Neos.Neos:Content': TRUE
   ui:
